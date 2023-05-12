@@ -1,0 +1,14 @@
+可用下列方式来判断芯片是否正常。判断标准在空旷的环境下两次读数据寄存器的值， 其结果表现状况：绝对值大致相同， 符号相反。  
+
+1.	0x20 = 40,  0x21=1,  0x0B=1,   0x09=1D
+2.	Wait 10ms
+3.	0x09=1C    ( enter standby mode)
+4.	0x0B=0      (turn off set/reset)
+5.	0x09=12    (self-test mode,  do set)
+6.	Wait 10ms and check whether 0x09=10 (wait until selftest done)
+7.	0x09=1D
+8.	Read x/y/z data  ( data A )
+9.	0x09=13     (self-test mode,  do reset)
+10.	Wait 10ms  and check whether 0x09=10 (wait until selftest done)
+11.	0x09=1D
+12.	Read x/y/z data  ( data B )

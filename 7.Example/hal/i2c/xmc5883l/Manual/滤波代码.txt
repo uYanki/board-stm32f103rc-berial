@@ -1,0 +1,24 @@
+ 8个数据窗口均值滤波：
+         AccsumX = 0;
+         AccsumY = 0;
+         AccsumZ = 0;
+         for( i=0;i<FILTERNUM-1;i++)
+         {
+                   fAccX[i] = fAccX[i+1];
+                   fAccY[i] = fAccY[i+1];
+                   fAccZ[i] = fAccZ[i+1];
+         }
+
+         fAccX[FILTERNUM-1] = acc->data[0];
+         fAccY[FILTERNUM-1] = acc->data[1];
+         fAccZ[FILTERNUM-1] = acc->data[2];
+
+         for( i=0;i<FILTERNUM;i++)
+         {
+                   AccsumX += fAccX[i];
+                   AccsumY += fAccY[i];
+                   AccsumZ += fAccZ[i];
+         }
+         acc->data[0] = AccsumX / FILTERNUM;
+         acc->data[1] = AccsumY / FILTERNUM;
+         acc->data[2] = AccsumZ / FILTERNUM;

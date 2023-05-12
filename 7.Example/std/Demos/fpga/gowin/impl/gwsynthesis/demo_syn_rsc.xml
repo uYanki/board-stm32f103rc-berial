@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="main" Register="25" Lut="48">
+    <SubModule name="gw_gao_inst_0" Register="343" Alu="10" Lut="391" Bsram="9"/>
+    <SubModule name="ram_test" Register="21" Lut="29">
+        <SubModule name="ram_inst" Bsram="1"/>
+    </SubModule>
+</Module>

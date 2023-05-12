@@ -1,0 +1,60 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        05/09/2008  05:55:08  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE STARTUP.obj, 74HC595.obj TO LED
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  STARTUP.obj (?C_STARTUP)
+  74HC595.obj (74HC595)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  LED (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000CH     UNIT         ?DT?74HC595
+            IDATA   0014H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     008CH     UNIT         ?C_C51STARTUP
+            CODE    008FH     0041H     UNIT         ?PR?LED4_DISPLAY?74HC595
+            CODE    00D0H     0023H     UNIT         ?CO?74HC595
+            CODE    00F3H     0021H     UNIT         ?PR?_LED_OUT?74HC595
+            CODE    0114H     0011H     UNIT         ?PR?MAIN?74HC595
+            CODE    0125H     0007H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   LED (?C_STARTUP)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?74HC595
+  +--> ?C_INITSEG
+
+?PR?MAIN?74HC595
+  +--> ?PR?LED4_DISPLAY?74HC595
+
+?PR?LED4_DISPLAY?74HC595
+  +--> ?CO?74HC595
+  +--> ?PR?_LED_OUT?74HC595
+
+?PR?_LED_OUT?74HC595
+  +--> ?CO?74HC595
+
+Program Size: data=21.0 xdata=0 code=300
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

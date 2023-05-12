@@ -1,0 +1,16 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\Administrator\桌面\骑远飞最新八位串行595数码管资料\HC595驱动8位led的8051程序\LED.uvproj
+Project File Date:  03/10/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling 74HC595.c...
+linking...
+Program Size: data=21.0 xdata=0 code=300
+creating hex file from "LED"...
+"LED" - 0 Error(s), 0 Warning(s).

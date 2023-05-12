@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
+    <FileList>
+        <File path="E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\gowin_sp\gowin_sp.v" type="verilog"/>
+        <File path="E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\main.v" type="verilog"/>
+        <File path="E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\ram.v" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v" type="gao"/>
+        <File path="C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\gw_jtag.v" type="gao"/>
+        <File path="E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\RTL_GAO\gw_gao_top.v" type="gao"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="include_path" value="C:/Gowin/Gowin_V1.9.8.09_Education/IDE/data/ipcores/GAO"/>
+        <Option type="include_path" value="E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/impl/gwsynthesis/RTL_GAO"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\demo.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

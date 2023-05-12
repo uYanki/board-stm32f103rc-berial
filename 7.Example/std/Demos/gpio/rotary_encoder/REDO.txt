@@ -1,0 +1,170 @@
+
+#include "board_conf.h"
+#include <SimpleSerialShell.h>
+
+class button {
+public:
+    button(uint8_t pin, uint16_t debounce_ms = 100)
+        : m_pin(pin), m_interval(debounce_ms), m_state(HIGH), m_time(0), m_changed(false)
+    {
+        pinMode(pin, INPUT_PULLUP);
+        read();
+    }
+
+    bool read(void);
+
+    // has the button been toggled from on -> off, or vice versa
+    bool toggled(void) { return read(), has_changed(); }
+
+    // has the button gone from off -> on
+    bool pressed(void) { return (read() == PRESSED && has_changed()); }
+
+    // has the button gone from on -> off
+    bool released(void) { return (read() == RELEASED && has_changed()); }
+
+    // mostly internal, tells you if a button has changed after calling the read() function
+    bool has_changed(void)
+    {
+        if (m_changed) {
+            m_changed = false;
+            return true;
+        }
+        return false;
+    }
+
+    const static bool PRESSED  = LOW;
+    const static bool RELEASED = HIGH;
+
+private:
+    uint8_t m_pin;
+
+    bool m_state;
+    bool m_changed;
+
+    uint16_t m_interval;
+    uint32_t m_time;  // ms
+};
+
+bool button::read()
+{
+    // ignore pin changes until after this delay time
+    if (m_time > millis()) {
+        // ignore any changes during this period
+    }
+    // pin has changed
+    else if (digitalRead(m_pin) != m_state) {
+        m_time    = millis() + m_interval;
+        m_state   = !m_state;
+        m_changed = true;
+    }
+
+    return m_state;
+}
+
+class encoder {
+public:
+    typedef enum {
+        INCREMENT,  // increment
+        DECREMENT,  // decrement
+        UNCHANGE    // unchange
+    } dir_e;
+
+public:
+    int32_t m_abs;
+    int32_t m_diff;
+    dir_e   m_dir;
+
+private:
+    int8_t m_pin_a;
+    int8_t m_pin_b;
+
+    bool    m_last_a;
+    int32_t m_count;
+
+    // 去编码器抖动的
+    bool m_first = 0;
+    bool m_flag  = 0;
+
+public:
+    encoder(int8_t pin_a, int8_t pin_b)
+        : m_diff(0), m_abs(0), m_count(0), m_last_a(HIGH), m_pin_a(pin_a), m_pin_b(pin_b)
+    {
+        pinMode(m_pin_a, INPUT_PULLUP);
+        pinMode(m_pin_b, INPUT_PULLUP);
+    }
+
+    void process(void)
+    {
+        bool now_a = digitalRead(m_pin_a);
+        bool now_b = digitalRead(m_pin_b);
+
+        if (m_first) {
+            // A 下降沿
+            if (!now_a) {
+                m_flag  = now_b;
+                m_first = false;
+            }
+        } else {
+            // A 上升沿
+            if (now_a) {
+                if (!now_b && m_flag) {
+                    --m_count;
+                } else if (now_b && !m_flag) {
+                    ++m_count;
+                }
+                m_first = true;
+            }
+        }
+    }
+
+    dir_e get(void)
+    {
+        m_diff = m_count - m_abs;
+        m_abs  = m_count;
+
+        if (m_diff < 0) {
+            m_dir = DECREMENT;
+        } else if (m_diff > 0) {
+            m_dir = INCREMENT;
+        } else {
+            m_dir = UNCHANGE;
+        }
+
+#if 1
+        if (m_dir != UNCHANGE) {
+            Serial.printf("%d,%d", m_diff, m_abs);
+            Serial.println("");
+        }
+#endif
+
+        return m_dir;
+    }
+};
+
+int itoctl(int argc, char** argv)
+{
+    if (argc == 2) {
+        int32_t ctl = atoi(argv[1]);
+    }
+    return EXIT_SUCCESS;
+}
+
+encoder ec(PIN_ENCODER_A, PIN_ENCODER_B);
+
+void setup()
+{
+    Serial.begin(115200);
+    while (!Serial) {}
+
+    Wire.begin(PIN_PMU_SDA, PIN_PMU_SCL);
+
+    shell.attach(Serial);
+    shell.addCommand(F("ctl"), itoctl);
+}
+
+void loop()
+{
+    shell.executeIfInput();
+    ec.process();
+    ec.get();
+}

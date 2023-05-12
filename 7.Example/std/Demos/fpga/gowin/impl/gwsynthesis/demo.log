@@ -1,0 +1,46 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\gowin_sp\gowin_sp.v'
+Analyzing Verilog file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\main.v'
+Analyzing Verilog file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\ram.v'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'
+Analyzing included file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":326)
+Back to file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":326)
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v'
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'
+Analyzing included file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_define.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":2734)
+Back to file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":2734)
+Analyzing included file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_top_define.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":2734)
+Back to file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":2734)
+Analyzing included file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_expression.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":2734)
+Back to file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":2734)
+Analyzing included file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\RTL_GAO\ao_0\gw_ao_parameter.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":2734)
+Back to file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":2734)
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'
+Analyzing included file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_top_define.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing included file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\RTL_GAO\ao_control\gw_con_parameter.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Back to file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":377)
+Analyzing Verilog file 'C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\gw_jtag.v'
+Analyzing Verilog file 'E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\RTL_GAO\gw_gao_top.v'
+WARN  (EX2664) : Variable 'addr' is used before it is assigned in an always_comb or always @* block, synthesis - simulation differences may occur("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\ram.v":63)
+Compiling module 'Gowin_SP'("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\gowin_sp\gowin_sp.v":9)
+Compiling module 'main'("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\main.v":1)
+Compiling module 'ram'("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\ram.v":1)
+WARN  (EX2420) : Latch inferred for net 'nstate[4]'; We do not recommend the use of latches in FPGA designs, as they may lead to timing problems("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\ram.v":67)
+ERROR (EX2000) : Net 'addr[7]' is constantly driven from multiple places("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\ram.v":67)
+ERROR (EX1999) : Found another driver here("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\ram.v":108)
+Module 'ram' remains a black box due to errors in its contents("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\ram.v":1)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_crc32.v":0)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":0)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":0)
+Extracting RAM for identifier '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":0)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_top.v":0)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":0)
+Extracting RAM for identifier '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_mem_ctrl.v":0)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_AO_0\gw_ao_match.v":0)
+Compiling module '**'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\GAO\GW_CON\gw_con_top.v":0)
+Compiling module 'GW_JTAG'("C:\Gowin\Gowin_V1.9.8.09_Education\IDE\data\ipcores\gw_jtag.v":1)
+Compiling module 'gw_gao'("E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\RTL_GAO\gw_gao_top.v":1)
+GowinSynthesis finish

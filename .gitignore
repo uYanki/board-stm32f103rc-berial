@@ -1,0 +1,26 @@
+﻿5.Toolchain/._cache_XCOM V2.6.exe
+5.Toolchain/FlyMcuConfig.ini
+*.d
+*.o
+.vscode
+*.uvguix.Administrator
+*.sct
+*.lnp
+*.map
+*.dep
+*.build_log.htm
+*.mxproject
+5.Toolchain/ProgramLogs.txt
+*.dbgconf
+keil-assistant.log
+c_cpp_properties.json
+.lst
+.crf
+5.Toolchain/FlyMCU/FlyMcuConfig.ini
+5.Toolchain/FlyMCU/ProgramLogs.txt
+ffmpeg.exe
+*.crf
+*.lst
+7.Example/std/flash/id/README.assets/20190323134230206.
+TencentOS-tiny-master.zip
+7.Example/std/Demos/flash/id/README.assets/20190323134230206.

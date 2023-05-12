@@ -1,0 +1,60 @@
+Configuration	STM32F746I
+STM32CubeMX 	4.12.0
+Date	12/17/2015
+MCU	STM32F746IGTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+QUADSPI	Bank1 with Quad SPI Lines	QUADSPI_BK1_IO0	PF8
+QUADSPI	Bank1 with Quad SPI Lines	QUADSPI_BK1_IO1	PF9
+QUADSPI	Bank1 with Quad SPI Lines	QUADSPI_BK1_IO2	PF7
+QUADSPI	Bank1 with Quad SPI Lines	QUADSPI_BK1_IO3	PF6
+QUADSPI	Bank1 with Quad SPI Lines	QUADSPI_BK1_NCS	PB6
+QUADSPI	Bank1 with Quad SPI Lines	QUADSPI_CLK	PB2
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PH0/OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PH1/OSC_OUT
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+24	PF6	QUADSPI_BK1_IO3	
+25	PF7	QUADSPI_BK1_IO2	
+26	PF8	QUADSPI_BK1_IO0	
+27	PF9	QUADSPI_BK1_IO1	
+29	PH0/OSC_IN	RCC_OSC_IN	
+30	PH1/OSC_OUT	RCC_OSC_OUT	
+58	PB2	QUADSPI_CLK	
+120	PA9	USART1_TX	
+121	PA10	USART1_RX	
+164	PB6	QUADSPI_BK1_NCS	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : STM32F746I
+Project Folder : C:\Users\Administrator\Desktop\stm32cube\STM32F746I\31.QuadSPI
+Toolchain / IDE : MDK-ARM V5
+Firmware Package Name and Version : STM32Cube FW_F7 V1.3.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per IP : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+

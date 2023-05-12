@@ -1,0 +1,24 @@
+{
+ "Files" : [
+  {
+   "Path" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/gowin_sp/gowin_sp.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/main.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/ram.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

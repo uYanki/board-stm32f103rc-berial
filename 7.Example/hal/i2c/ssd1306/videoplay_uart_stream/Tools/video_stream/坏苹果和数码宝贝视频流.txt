@@ -1,0 +1,2 @@
+https://www.bilibili.com/video/BV1e94y1278H/
+烧录程序后，运行 python 程序即可

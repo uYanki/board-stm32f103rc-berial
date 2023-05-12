@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Documents and Settings\Administrator\×ÀÃæ\HC595Çý¶¯8Î»led\LED.uvproj
+Project File Date:  03/10/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling 74HC595.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LED4_DISPLAY1?74HC595
+Program Size: data=25.0 xdata=0 code=501
+creating hex file from "LED"...
+"LED" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+assembling STARTUP.A51...
+compiling 74HC595.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LED4_DISPLAY1?74HC595
+Program Size: data=25.0 xdata=0 code=501
+creating hex file from "LED"...
+"LED" - 0 Error(s), 1 Warning(s).

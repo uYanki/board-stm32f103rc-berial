@@ -1,0 +1,30 @@
+[
+ {
+  "InstFile" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/main.v",
+  "InstLine" : 1,
+  "InstName" : "main",
+  "ModuleFile" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/main.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "main",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/main.v",
+    "InstLine" : 30,
+    "InstName" : "ram_test",
+    "ModuleFile" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/ram.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "ram",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/ram.v",
+      "InstLine" : 32,
+      "InstName" : "ram_inst",
+      "ModuleFile" : "E:/board-stm32f103rc-berial/7.Example/std/fpga/gowin/src/gowin_sp/gowin_sp.v",
+      "ModuleLine" : 9,
+      "ModuleName" : "Gowin_SP"
+     }
+    ]
+   }
+  ]
+ }
+]

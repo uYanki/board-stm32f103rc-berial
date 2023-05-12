@@ -1,0 +1,231 @@
+﻿﻿﻿﻿﻿﻿﻿﻿﻿Version 3.6.2
+Time 2022.10.25
+ * support DPI
+ * update MacOS support(MacOS 12 or later)
+ 
+Version 3.6.1
+Time 2022.7.5
+ * fixed bugs
+ 
+Version 3.6.0
+Time 2022.6.23
+ * Optimizer Something
+ * Add MPU6500 value output
+ * Add STM32 HAL example
+ * Update handbook
+
+﻿﻿Version 3.5.9
+Time 2022.6.19
+ * Optimizer Something
+
+Version 3.5.8
+Time 2022.6.4
+ * Optimizer Something
+ * Delete password protection for instructions
+ * Update firmware
+ 
+﻿Version 3.5.7
+Time 2022.5.26
+ * Optimizer Something
+
+Version 3.5.6
+Time 2022.2.3
+ * fixed bugs
+ 
+Version 3.5.5
+Time 2022.1.16
+ * Update firmware
+ * Update handbook
+ * Add potentiometer support
+ * Optimizer Something
+
+Version 3.5.4
+Time 2021.8.10
+ * Update firmware
+ * Optimizer Something
+ 
+Version 3.5.3
+Time 2021.7.25
+ * Update firmware
+ * Add auto refresh serial port
+
+Version 3.5.2
+Time 2021.7.4
+ * fixed bugs
+ * Update firmware
+
+Version 3.5.1
+Time 2021.6.30
+ * fixed bugs
+ 
+Version 3.5.0
+Time 2021.6.27
+ * Optimizer Something
+ * fixed some resolution
+ * Add "Replace" function
+ * Add full instruction mode
+ * Add font size
+
+﻿﻿﻿﻿﻿Version 3.4.2
+Time 2021.5.12
+ * Optimizer Something
+ * fixed some resolution
+ * Add Raspberry Pi Pico example
+ * Android add bluetooth ble
+ 
+﻿﻿﻿﻿﻿﻿Version 3.4.1
+Time 2020.9.29
+ * Optimizer Something
+
+Version 3.4.0
+Time 2020.5.21
+ * add arduino SoftwareSerial
+ * Add USB type-c support(32-channel hardware version 3.2)
+ * Add Linux Code(C , PYthon3)
+ * Add ESP32 example
+ * Add ESP8266 example
+ * Update handbook
+
+﻿﻿Version 3.3.9
+Time 2020.3.23
+ * fixed bugs
+ * Optimizer Something
+ 
+Version 3.3.8
+Time 2020.3.11
+ * fixed bugs
+ * Optimizer Something
+
+﻿Version 3.3.7
+Time 2019.9.11
+ * fixed bugs
+ * Update firmware
+
+Version 3.3.6
+Time 2019.9.10
+ * fixed bugs
+ * Update firmware
+
+Version 3.3.5
+Time 2019.9.9
+ * fixed bugs
+ * Update firmware
+
+Version 3.3.4
+Time 2019.8.21
+ * fixed bugs
+ * Update firmware
+ * Update Android app
+
+Version 3.3.3
+Time 2019.7.29
+ * Update handbook
+ * Update firmware
+ * Add password protection for instructions
+
+Version 3.3.2
+Time 2019.7.9
+ * Optimizer Something
+ * Update handbook
+ * Update firmware
+ * Add a new wireless remote control mode
+ * Speed and Delay modified to 0-9999
+ * fixed some bugs
+
+Version 3.3.1
+Time 2019.5.8
+ * Optimizer Something
+ * Update handbook
+ * add Fritzing library
+
+Version 3.3.0
+Time 2018.11.23
+ * Add new instruction(See handbook--Instruction)
+ * Optimizer Something
+ * Update handbook
+ * Update firmware
+
+Version 3.2.9
+Time 2018.8.11
+ * fixed big screen resolution bug
+ * Update STM32 example
+
+﻿Version 3.2.8
+Time 2018.7.21
+ * fixed firmware Bugs
+ * Add Group Alias
+ * Add Instruction High Linght
+
+Version 3.2.7
+Time 2018.6.15
+ * fixed firmware Bugs
+
+Version 3.2.6
+Time 2018.6.11
+ * Optimizer Something
+ * Update example
+ * fixed bugs
+ * Update firmware
+
+Version 3.2.5
+Time 2018.6.6
+ * Update Default Panle
+ * Add Version Check
+ * fixed bugs
+ * Update handbook
+
+Version 3.2.4
+Time 2018.5.3
+ * Update Default Panle
+
+Version 3.2.3
+Time 2018.3.1
+ * Update firmware
+ * Update handbook
+ * Add new instruction(See handbook--Instruction)
+ * Update Android Software
+
+﻿Version 3.2.2
+Time 2017.11.17
+ * Add Panle Setting
+
+Version 3.2.1
+Time 2017.8.27
+ * fixed bugs
+ * fixed Mac OS 3D can not show
+
+Version 3.2.0
+Warning: This version only supports the hardware version:
+Servo32:	3.1 or after
+Servo24:	1.3 or after
+Servo16:	2.0 or after
+Time 2017.6.1
+ * Add 3D
+ * Change control panel
+ * Update handbook
+ * Delete old handbook
+
+Version 3.1.9
+Warning:If you use this hardware version or after,please update the firmware:
+Servo32:	3.1 or after
+Servo24:	1.3 or after
+Servo16:	2.0 or after
+Time 2017.5.3
+ * Update firmware
+
+Version 3.1.8
+Time 2017.4.23
+ * Update STM32 example
+ * fixed Wireless controller
+
+Version 3.1.7
+Time 2017.4.7
+ * Update STM32 example
+ * Add Wireless controller Setting
+
+Version 3.1.6
+Time 2017.3.26
+ * Add STM32 example
+ * Update Arduino example
+ * Add Raspberry Pi example
+ * Add Raspberry Pi Software

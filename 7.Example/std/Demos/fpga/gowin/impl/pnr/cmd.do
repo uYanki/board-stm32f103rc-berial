@@ -1,0 +1,13 @@
+-d E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\gwsynthesis\demo.vg
+-p GW1NR-9C-QFN88P-6
+-pn GW1NR-LV9QN88PC6/I5
+-cst E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\src\demo.cst
+-cfg E:\board-stm32f103rc-berial\7.Example\std\fpga\gowin\impl\pnr\device.cfg
+-gao_crc 0101011011010001
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-route_maxfan 23
+-rtl_gao

@@ -2,7 +2,6 @@
 
 #define CYCLE_ANGLE       360
 #define STEPPER_ONE_CYCLE 64
-#define APP_TASK_PRIORITY 5
 #define CYCLE_STEP        8
 #define STEP_ANGLE        5.625
 
@@ -28,7 +27,7 @@ void stepper_init(void)
     GPIO_Init(GPIOC, &GPIO_InitStructure);
 }
 
-// Rotate [target] cycle [dir,false:counterclockwise,true:clockwise] in [time] ms
+// Rotate [target] cycle [dir,false:counterclockwise,true:clockwise]
 void stepper_docycle(uint32_t target, bool dir)
 {
     static uint8_t CCW[CYCLE_STEP] = {0b1110, 0b1100, 0b1101, 0b1001, 0b1011, 0b0011, 0b0111, 0b0110};  // Counterclockwise beat

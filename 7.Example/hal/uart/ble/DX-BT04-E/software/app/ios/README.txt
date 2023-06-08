@@ -1,0 +1,1 @@
+download DX-SMART from app store 

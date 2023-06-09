@@ -15,7 +15,7 @@ inline void ssd1306_write_ndata(uint8_t* data, uint16_t len) { ssd1306_write(0x4
 // 初始化
 void ssd1306_init(void)
 {
-    HAL_Delay(500);  // 这里的延时很重要
+    HAL_Delay(500);           // 这里的延时很重要
 
     ssd1306_write_cmd(0xAE);  // display off
     ssd1306_write_cmd(0x20);  // Set Memory Addressing Mode
@@ -58,9 +58,12 @@ void ssd1306_set_cursor(uint8_t x, uint8_t y)
 // 全屏填充(全亮:0xFF,全灭:0x00)
 void ssd1306_fill(uint8_t data)
 {
-    static const uint8_t zerobuff[128] = {0x00};
+    static uint8_t zerobuff[128] = {0x00};
 
     uint8_t y;
+    for (y = 0; y < 128; ++y) {
+        zerobuff[y] = data;
+    }
     for (y = 0; y < 8; ++y) {
         ssd1306_set_cursor(0, y);
         ssd1306_write_ndata((uint8_t*)zerobuff, 128);

@@ -103,7 +103,7 @@ int main(void) {
     HAL_ADC_Start_DMA(&hadc1, (uint32_t*)&adc_value, 3);
     while (1) {
         printf("%i,%i,%i\r\n", adc_value[0], adc_value[1], adc_value[2]);
-        HAL_Delay(20);
+        HAL_Delay(2);
         /* USER CODE END WHILE */
 
         /* USER CODE BEGIN 3 */

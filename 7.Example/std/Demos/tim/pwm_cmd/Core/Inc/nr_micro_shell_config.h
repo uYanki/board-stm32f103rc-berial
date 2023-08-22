@@ -141,8 +141,8 @@ The end of line.
 #define NR_SHELL_USING_EXPORT_CMD
 
 /* If you use RTOS, you may need to do some special processing for printf(). */
-#define shell_printf(fmt, ...) printf(fmt, ##__VA_ARGS__)
-#define ansi_show_char(x)      putchar(x)
+#define shell_printf(fmt, args...) printf(fmt, ##args);
+#define ansi_show_char(x)          putchar(x)
 
 #endif
 

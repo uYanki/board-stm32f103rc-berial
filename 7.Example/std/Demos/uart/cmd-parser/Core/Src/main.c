@@ -21,7 +21,7 @@ int main(void)
 
 #if USE_CMD_PARSER == 4
     for (;;) {
-        // 处理不支持的指令
+        // 处理未注册的指令
         if (uart2_rxflg) {
             uart2_rxflg = 0;
             println("unsupport command");

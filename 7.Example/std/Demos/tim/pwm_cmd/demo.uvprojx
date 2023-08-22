@@ -326,7 +326,7 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>0</uC99>
-            <uGnu>0</uGnu>
+            <uGnu>1</uGnu>
             <useXO>0</useXO>
             <v6Lang>3</v6Lang>
             <v6LangP>3</v6LangP>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\Drivers\CMSIS\CM3\DeviceSupport\ST\STM32F10x\;..\..\..\Drivers\STM32F10x_StdPeriph_Driver\inc;.\Core\Inc;..\Lib;..\..\..\Board\Inc</IncludePath>
+              <IncludePath>..\..\..\Drivers\CMSIS\CM3\DeviceSupport\ST\STM32F10x\;..\..\..\Drivers\STM32F10x_StdPeriph_Driver\inc;..\..\..\Drivers\CMSIS\CM3\CoreSupport;.\Core\Inc;..\Lib;..\..\..\Board\Inc;..\..\uart\nr_micro_shell\Lib\nr_micro_shell\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -572,6 +572,31 @@
               <FileName>pinctrl.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\Board\Src\pinctrl.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Libraries/Shell</GroupName>
+          <Files>
+            <File>
+              <FileName>ansi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uart\nr_micro_shell\Lib\nr_micro_shell\src\ansi.c</FilePath>
+            </File>
+            <File>
+              <FileName>ansi_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uart\nr_micro_shell\Lib\nr_micro_shell\src\ansi_port.c</FilePath>
+            </File>
+            <File>
+              <FileName>nr_micro_shell.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uart\nr_micro_shell\Lib\nr_micro_shell\src\nr_micro_shell.c</FilePath>
+            </File>
+            <File>
+              <FileName>nr_micro_shell_commands.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\uart\nr_micro_shell\Lib\nr_micro_shell\src\nr_micro_shell_commands.c</FilePath>
             </File>
           </Files>
         </Group>

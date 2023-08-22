@@ -17,7 +17,7 @@
 #undef USE_IRQ_U1RX
 #endif
 
-// 1; Poll 2:IRQ_U1RX 4:IRQ_U2RX
+// 1: Poll 2:IRQ_U1RX 4:IRQ_U2RX
 #define USE_CMD_PARSER 0
 
 #endif

@@ -1,3 +1,4 @@
+// configuare template for 'board_conf.h'
 #if 0
 
 #ifndef __BOARD_CONF_H__

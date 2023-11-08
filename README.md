@@ -4,7 +4,7 @@
 
 硬件：https://oshwhub.com/aris.95/stm32f103rct6-core（最新）
 
-注：HAL 工程不带固件库，需提前在 STM32CubeMX 中安装好 F1 的固件库。
+注：HAL 工程不带固件库，需提前在 STM32CubeMX 中安装好 F1 的固件库。并修改调用 `fixpath.py`  以重定向项目路径。
 
 ---
 

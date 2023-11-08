@@ -41,7 +41,7 @@ BraceWrapping:
   # class定义后面
   AfterClass: false
   # 控制语句后面
-  AfterControlStatement: false
+  AfterControlStatement: true
   # enum定义后面
   AfterEnum: false
   # 函数定义后面
@@ -59,7 +59,7 @@ BraceWrapping:
   # catch之前
   BeforeCatch: false
   # else之前
-  BeforeElse: false
+  BeforeElse: true
   # 缩进大括号
   IndentBraces: false
   SplitEmptyFunction: true
@@ -212,5 +212,7 @@ AlignOperands: true
 # 三元运算符（换行）
 BreakBeforeTernaryOperators: true
 
+# 自动补大括号 `{}`
+InsertBraces: true
 # 函数定义之间不插入空行（ All：在所有定义之间插入空行，包括函数定义、变量定义、结构体定义等。）
 # SeparateDefinitionBlocks: false

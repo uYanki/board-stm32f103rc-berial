@@ -88,8 +88,9 @@ uint8_t soft_i2c_recv(soft_i2c_t* bus, soft_i2c_ack_t ack)
     do {
         SCL_H(bus);
         Delay(bus);
-        if (SDA(bus))
+        if (SDA(bus)) {
             dat |= mask;
+        }
         SCL_L(bus);
         Delay(bus);
     } while (mask >>= 1);
@@ -136,7 +137,7 @@ bool soft_i2c_send(soft_i2c_t* bus, uint8_t dat)
 
     /* recv ack or nack */
 
-    uint8_t timeout    = 0;
+    uint8_t timeout = 0;
 
     soft_i2c_ack_t ack = SOFT_I2C_ACK;  // ack
 
@@ -163,8 +164,9 @@ exit:
 void soft_i2c_recvs(soft_i2c_t* bus, uint8_t* dat, uint16_t len, soft_i2c_ack_t ack)
 {
     if (len > 0) {
-        while (--len)
+        while (--len) {
             *dat++ = soft_i2c_recv(bus, SOFT_I2C_ACK);
+        }
         *dat = soft_i2c_recv(bus, ack);  // last
     }
 }
@@ -172,8 +174,9 @@ void soft_i2c_recvs(soft_i2c_t* bus, uint8_t* dat, uint16_t len, soft_i2c_ack_t 
 bool soft_i2c_sends(soft_i2c_t* bus, uint8_t* dat, uint16_t len)
 {
     while (len--) {
-        if (false == soft_i2c_send(bus, *dat++))
+        if (false == soft_i2c_send(bus, *dat++)) {
             return false;
+        }
     }
     return true;
 }
@@ -198,7 +201,9 @@ bool soft_i2c_receive(soft_i2c_t* bus, uint16_t dev, uint8_t* dat, uint16_t len,
 {
     bool ret;
     soft_i2c_start(bus);
-    if (false == (ret = soft_i2c_send(bus, dev | 0x01))) goto exit;
+    if (false == (ret = soft_i2c_send(bus, dev | 0x01))) {
+        goto exit;
+    }
     soft_i2c_recvs(bus, dat, len, SOFT_I2C_NACK);
 exit:
     soft_i2c_stop(bus);
@@ -209,8 +214,12 @@ bool soft_i2c_transmit(soft_i2c_t* bus, uint16_t dev, uint8_t* dat, uint16_t len
 {
     bool ret;
     soft_i2c_start(bus);
-    if (false == (ret = soft_i2c_send(bus, dev & 0xFE))) goto exit;
-    if (false == (ret = soft_i2c_sends(bus, dat, len))) goto exit;
+    if (false == (ret = soft_i2c_send(bus, dev & 0xFE))) {
+        goto exit;
+    }
+    if (false == (ret = soft_i2c_sends(bus, dat, len))) {
+        goto exit;
+    }
 exit:
     soft_i2c_stop(bus);
     return ret;
@@ -220,10 +229,16 @@ bool soft_i2c_read_mem(soft_i2c_t* bus, uint16_t dev, uint16_t reg, uint8_t* dat
 {
     bool ret;
     soft_i2c_start(bus);
-    if (false == (ret = soft_i2c_send(bus, dev & 0xFE))) goto exit;
-    if (false == (ret = soft_i2c_sends(bus, (uint8_t*)&reg, ops & I2C_REG_16BIT ? 2 : 1))) goto exit;
+    if (false == (ret = soft_i2c_send(bus, dev & 0xFE))) {
+        goto exit;
+    }
+    if (false == (ret = soft_i2c_sends(bus, (uint8_t*)&reg, ops & I2C_REG_16BIT ? 2 : 1))) {
+        goto exit;
+    }
     soft_i2c_start(bus);
-    if (false == (ret = soft_i2c_send(bus, dev | 0x01))) goto exit;
+    if (false == (ret = soft_i2c_send(bus, dev | 0x01))) {
+        goto exit;
+    }
     soft_i2c_recvs(bus, dat, len, SOFT_I2C_NACK);
 exit:
     soft_i2c_stop(bus);
@@ -234,9 +249,15 @@ bool soft_i2c_write_mem(soft_i2c_t* bus, uint16_t dev, uint16_t reg, uint8_t* da
 {
     bool ret;
     soft_i2c_start(bus);
-    if (false == (ret = soft_i2c_send(bus, dev & 0xFE))) goto exit;
-    if (false == (ret = soft_i2c_sends(bus, (uint8_t*)&reg, ops & I2C_REG_16BIT ? 2 : 1))) goto exit;
-    if (false == (ret = soft_i2c_sends(bus, dat, len))) goto exit;
+    if (false == (ret = soft_i2c_send(bus, dev & 0xFE))) {
+        goto exit;
+    }
+    if (false == (ret = soft_i2c_sends(bus, (uint8_t*)&reg, ops & I2C_REG_16BIT ? 2 : 1))) {
+        goto exit;
+    }
+    if (false == (ret = soft_i2c_sends(bus, dat, len))) {
+        goto exit;
+    }
 exit:
     soft_i2c_stop(bus);
     return ret;
@@ -469,7 +490,9 @@ INLINE uint8_t i2cdev_get_mask(i2c_cli_t cli, uint16_t reg, uint8_t mask, const 
 
 bool i2cdev_viewer(i2c_cli_t cli, uint16_t start, uint16_t end, uint8_t fmt)
 {
-    if (start > end) swap_int(start, end);
+    if (start > end) {
+        swap_int(start, end);
+    }
 
     uint8_t  dat, mask;
     uint16_t reg = start;
@@ -487,8 +510,9 @@ bool i2cdev_viewer(i2c_cli_t cli, uint16_t start, uint16_t end, uint8_t fmt)
                 default:
                 case UINT_FORMAT_BIN: {
                     uint8_t i;
-                    for (mask = 0x80; mask > 0; mask >>= 1)
+                    for (mask = 0x80; mask > 0; mask >>= 1) {
                         printf("%c", dat & mask ? '1' : '0');
+                    }
                     break;
                 }
                 case UINT_FORMAT_DEC: {

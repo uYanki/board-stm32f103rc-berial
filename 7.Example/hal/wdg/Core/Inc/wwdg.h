@@ -1,26 +1,28 @@
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * File Name          : WWDG.h
-  * Description        : This file provides code for the configuration
-  *                      of the WWDG instances.
+  * @file    wwdg.h
+  * @brief   This file contains all the function prototypes for
+  *          the wwdg.c file
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
-  * All rights reserved.</center></h2>
+  * Copyright (c) 2023 STMicroelectronics.
+  * All rights reserved.
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
   */
+/* USER CODE END Header */
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __wwdg_H
-#define __wwdg_H
+#ifndef __WWDG_H__
+#define __WWDG_H__
+
 #ifdef __cplusplus
- extern "C" {
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -45,14 +47,6 @@ void MX_WWDG_Init(void);
 #ifdef __cplusplus
 }
 #endif
-#endif /*__ wwdg_H */
 
-/**
-  * @}
-  */
+#endif /* __WWDG_H__ */
 
-/**
-  * @}
-  */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

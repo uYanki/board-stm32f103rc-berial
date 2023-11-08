@@ -135,11 +135,6 @@ int main(void) {
     if (f_mount(&fs, "", 0) != FR_OK)
         SD_Error_Handler(__FILE__, __LINE__);
 
-    /* Open file to write */
-
-    if (f_open(&fil, "first.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) != FR_OK)
-        SD_Error_Handler(__FILE__, __LINE__);
-
     /* Check freeSpace space */
     if (f_getfree("", &fre_clust, &pfs) != FR_OK)
         SD_Error_Handler(__FILE__, __LINE__);
@@ -153,6 +148,11 @@ int main(void) {
     /* free space is less than 1kb */
     if (freeSpace < 1)
         SD_Error_Handler(__FILE__, __LINE__);
+		
+    /* Open file to write */
+
+//    if (f_open(&fil, "first.txt", FA_OPEN_ALWAYS | FA_READ | FA_WRITE) != FR_OK)
+//        SD_Error_Handler(__FILE__, __LINE__);
 
     /* Writing text */
     f_puts("STM32 SD Card I/O Example via SDIO\n", &fil);

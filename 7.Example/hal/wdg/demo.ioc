@@ -1,7 +1,4 @@
 #MicroXplorer Configuration settings - do not modify
-CAD.formats=
-CAD.pinconfig=
-CAD.provider=
 File.Version=6
 IWDG.IPParameters=Prescaler
 IWDG.Prescaler=IWDG_PRESCALER_4
@@ -31,8 +28,8 @@ Mcu.PinsNb=10
 Mcu.ThirdPartyNb=0
 Mcu.UserConstants=
 Mcu.UserName=STM32F103RCTx
-MxCube.Version=6.7.0
-MxDb.Version=DB.6.0.70
+MxCube.Version=6.5.0
+MxDb.Version=DB.6.0.50
 NVIC.BusFault_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.DebugMonitor_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false
 NVIC.ForceEnableDMAVector=true
@@ -76,7 +73,7 @@ ProjectManager.FreePins=false
 ProjectManager.HalAssertFull=false
 ProjectManager.HeapSize=0x200
 ProjectManager.KeepUserCode=true
-ProjectManager.LastFirmware=true
+ProjectManager.LastFirmware=false
 ProjectManager.LibraryCopy=2
 ProjectManager.MainLocation=Core/Src
 ProjectManager.NoMain=false

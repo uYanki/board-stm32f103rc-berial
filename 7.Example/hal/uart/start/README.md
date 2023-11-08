@@ -101,15 +101,15 @@ HAL_UART_StateTypeDef HAL_UART_GetState(UART_HandleTypeDef *huart);
 
 串口使能：
 
-![1](README.assets/1.png)
+![1](.assest/README/1.png)
 
 中断使能：
 
-![2](README.assets/2.png)
+![2](.assest/README/2.png)
 
 使能 MircoLib (keil5 中)：
 
-![3](README.assets/3.png)
+![3](.assest/README/3.png)
 
 接收数据（中断模式）：
 
@@ -163,7 +163,7 @@ HAL_UART_Receive_IT(&huart1, &aRxBuffer, 1);
 
 #### 重定向（适用单串口）
 
-![4](README.assets/4.png)
+![4](.assest/README/4.png)
 
 在 `uasrt.h` 中添加：
 
@@ -215,11 +215,11 @@ void uart_printf(UART_HandleTypeDef* huart, const char* format, ...) {
 
 ### 附：不使用 MircoLIB，如何使用 printf
 
-![6](README.assets/6.png)
+![6](.assest/README/6.png)
 
-![7](README.assets/7.png)
+![7](.assest/README/7.png)
 
-![8](README.assets/8.png)
+![8](.assest/README/8.png)
 
 ```c
 #include <stdio.h>
@@ -242,4 +242,22 @@ int fputc(int ch, FILE* f) {
     return ch;
 }
 ```
+
+---
+
+MDK 配置如下
+
+![9](.assest/README/9.png)
+
+但报错：
+
+in startup_stm32f103xe.s
+
+Undefined symbol __use_two_region_memory
+
+Undefined symbol __initial_sp
+
+![10](.assest/README/10.png)
+
+将两句先注释，编译，再消掉注释，编译。就可以通过了。
 

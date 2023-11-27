@@ -15,3 +15,4 @@
 每500ms切换1次输出波形：
 
 ![1](README.assets/1.png)
+
